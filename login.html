@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Регистрация</title>
+    <link
+      rel="stylesheet"
+      href="/node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button
+            type="button"
+            class="navbar-toggle collapsed"
+            data-toggle="collapse"
+            data-target="#navbar"
+            aria-expanded="false"
+            aria-controls="navbar"
+          >
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="/">Центр занятости</a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="/">Главная</a></li>
+            <li class="active"><a href="/reg.html">Регистрация</a></li>
+            <li><a href="/login.html">Авторизация</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="container form-container">
+      <div class="row form">
+        <div class="col-md-12">
+          <div class="alert alert-success" role="alert">
+            <strong>Well done!</strong> You successfully read this important
+            alert message.
+          </div>
+          <form class="form-signin">
+            <h2 class="form-signin-headin text-center">Регистрация</h2>
+
+            <div class="form-group">
+              <label for="inputFio" class="sr-only">ФИО</label>
+              <input
+                type="text"
+                id="inputFio"
+                class="form-control"
+                placeholder="ФИО"
+                required
+                autofocus
+              />
+            </div>
+            <div class="form-group">
+              <label for="inputLogin" class="sr-only">Логин</label>
+              <input
+                type="text"
+                id="inputLogin"
+                class="form-control"
+                placeholder="Логин"
+                required
+                autofocus
+              />
+            </div>
+            <div class="form-group">
+              <label for="inputPhone" class="sr-only">Номер телефона</label>
+              <input
+                type="tel"
+                id="inputPhone"
+                class="form-control"
+                placeholder="Номер телефона:"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="inputEmail" class="sr-only">E-mail:</label>
+              <input
+                type="email"
+                id="inputEmail"
+                class="form-control"
+                placeholder="E-mail:"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="password" class="sr-only">Пароль:</label>
+              <input
+                type="password"
+                id="password"
+                class="form-control"
+                placeholder="Пароль:"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="repeatPassword" class="sr-only">Повтор пароля:</label>
+              <input
+                type="password"
+                id="repeatPassword"
+                class="form-control"
+                placeholder="Повтор пароля:"
+                required
+              />
+            </div>
+
+            <div class="checkbox">
+              <label>
+                <input type="checkbox" value="agreeData" /> Согласие на
+                обработку персональных данных ?
+              </label>
+            </div>
+            <div class="form-group">
+              <label for="status" class="sr-only">Статус</label>
+              <select id="status" class="form-control">
+                <option value="1">Cоискатель</option>
+                <option value="2">Работодатель</option>
+              </select>
+            </div>
+
+            <button class="btn btn-lg btn-primary btn-block" type="submit">
+              Зарегистрироваться
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  </body>
+</html>
