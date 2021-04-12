@@ -39,42 +39,72 @@
             <li><a href="login.html">Авторизация</a></li>
             <li><a href="logout.html">Выход</a></li>
           </ul>
+          </ul>
         </div>
       </div>
     </nav>
     <div class="container form-container">
       <div class="row form">
         <div class="col-md-12">
-          <div class="alert alert-danger" role="alert">
-            <strong>Ошибка !</strong> Неверные логин и/или пароль
+          <div class="alert alert-success" role="alert">
+            <strong>Успех! </strong>Вакансия успешно добавлена.
           </div>
           <form class="form-signin">
-            <h2 class="form-signin-headin text-center">Авторизация</h2>
+            <h2 class="form-signin-headin text-center">Добавление вакансии</h2>
 
             <div class="form-group">
-              <label for="inputLogin" class="sr-only">Логин:</label>
+              <label for="titleVacancy" class="sr-only">Название вакансии</label>
               <input
                 type="text"
-                id="inputLogin"
+                id="titleVacancy"
                 class="form-control"
-                placeholder="Логин:"
+                placeholder="Название вакансии"
                 required
+                autofocus
               />
             </div>
             <div class="form-group">
-              <label for="inputPass" class="sr-only">Пароль</label>
+              <label for="inputDateTime" class="sr-only">Дата и время создания</label>
+              <input
+                type="datetime"
+                id="inputDateTime"
+                class="form-control"
+                placeholder="Дата и время создания"
+                required
+                autofocus
+              />
+            </div>
+            <div class="form-group">
+              <label for="inputShortDesc" class="sr-only">Краткое описание</label>
+              <textarea name="short_desc" id="inputShortDesc"></textarea>
+            </div>
+            <div class="form-group">
+              <label for="titleF" class="sr-only">ФИО должностного лица</label>
               <input
                 type="text"
-                id="inputPass"
+                id="inputFio"
                 class="form-control"
-                placeholder="Пароль:"
+                placeholder="ФИО"
                 required
                 autofocus
               />
             </div>
 
+
+
+
+            <div class="form-group">
+              <label for="inputPhotoVacancy" class="sr-only">Фото вакансии</label>
+              <input
+                type="file"
+                id="inputPhotoVacancy"
+                class="form-control"
+                required
+              />
+            </div>
+           
             <button class="btn btn-lg btn-primary btn-block" type="submit">
-              Войти
+             Добавить вакансию
             </button>
           </form>
         </div>

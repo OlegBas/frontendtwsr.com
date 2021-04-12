@@ -37,7 +37,6 @@
               <a href="reg.html">Регистрация</a>
             </li>
             <li><a href="login.html">Авторизация</a></li>
-            <li><a href="logout.html">Выход</a></li>
           </ul>
         </div>
       </div>
@@ -140,7 +139,9 @@
               
             
             <div class="tab-pane" id="myvacs">
-
+              <button class="btn btn-lg btn-primary btn-block" type="button">
+                Создать вакансию
+              </button>
               <table class="table table-bordered  table-condensed"">
                 <!-- On rows -->
                 <tr>
@@ -149,8 +150,8 @@
                       <label for="filter_vacancy" class="sr-only">Фильтрация</label>
                       <select id="filter_vacancy" class="form-control">
                         <option value="1">Аутальные вакансии</option>
-                        <option value="2">Просмотренные вакансии</option>
-                        <option value="3">Выбранные вакансии</option>
+                        <option value="2">Несогласованные вакансии</option>
+                        <option value="3">Завершенные вакансии</option>
                       </select>
                     </div>
                   </th>
@@ -170,7 +171,7 @@
                     vero nisi possimus provident earum, laudantium inventore
                     voluptate reprehenderit explicabo omnis ex perspiciatis!
                   </td>
-                  <td><a href="#">Отказать от вакансии</a>
+                  <td><a href="#">Изменить</a>
                 </tr>
                 <tr>
                   <td class="active">Грузчик</td>
@@ -180,7 +181,7 @@
                     vero nisi possimus provident earum, laudantium inventore
                     voluptate reprehenderit explicabo omnis ex perspiciatis!
                   </td>
-                  <td><a href="#">Отказать от вакансии</a></td>
+                  <td><a href="#">Изменить</a></td>
                 </tr>
     
               </table>

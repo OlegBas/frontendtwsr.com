@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Регистрация</title>
+    <title>Личный кабинет Соискателя</title>
     <link
       rel="stylesheet"
       href="node_modules/bootstrap/dist/css/bootstrap.min.css"
@@ -45,42 +45,60 @@
     <div class="container form-container">
       <div class="row form">
         <div class="col-md-12">
-          <div class="alert alert-danger" role="alert">
-            <strong>Ошибка !</strong> Неверные логин и/или пароль
-          </div>
-          <form class="form-signin">
-            <h2 class="form-signin-headin text-center">Авторизация</h2>
+          <ol class="breadcrumb">
+            <li><a href="#">Home</a></li>
+            <li class="active"><a href="#">Статистика</a></li>
+          </ol>
 
-            <div class="form-group">
-              <label for="inputLogin" class="sr-only">Логин:</label>
-              <input
-                type="text"
-                id="inputLogin"
-                class="form-control"
-                placeholder="Логин:"
-                required
-              />
-            </div>
-            <div class="form-group">
-              <label for="inputPass" class="sr-only">Пароль</label>
-              <input
-                type="text"
-                id="inputPass"
-                class="form-control"
-                placeholder="Пароль:"
-                required
-                autofocus
-              />
-            </div>
+          
+        
+              <table class="table table-bordered  table-condensed"">
+                <!-- On rows -->
+                <tr class="active">
+                  <th>количество соискателей</th>
+                  <th>количество вопросов спикеру</th>
+                  <th>Оценка работадателю</th>
+                  <th>
+                    
+                  </th>
+                </tr>
+                <tr>
+                  <td class="active">10</td>
+                  <td class="success">
+                    2
+                  </td>
+                  <td>5</td>
+                  
+                </tr>
+    
+              </table>
 
-            <button class="btn btn-lg btn-primary btn-block" type="submit">
-              Войти
-            </button>
-          </form>
-        </div>
+              <h3>Вопросы спикеру</h3>
+              <div class = 'comment'>
+                question 1
+              </div>
+              <div class = 'comment'>
+                question 2
+
+              </div>
+
+                <h3>Комментарии</h3>
+              <div class = 'comment'>
+                comment 1
+              </div>
+              <div class = 'comment'>
+                comment 2
+
+              </div>
+
+          
       </div>
     </div>
-
+    </div>
+    <script
+    src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+    crossorigin="anonymous"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
   </body>
 </html>
