@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Личный кабинет Соискателя</title>
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button
+            type="button"
+            class="navbar-toggle collapsed"
+            data-toggle="collapse"
+            data-target="#navbar"
+            aria-expanded="false"
+            aria-controls="navbar"
+          >
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html">Центр занятости</a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="index.html">Главная</a></li>
+            <li class="active">
+              <a href="reg.html">Регистрация</a>
+            </li>
+            <li><a href="login.html">Авторизация</a></li>
+            <li><a href="login.html">Выход</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="container form-container">
+      <div class="row form">
+        <div class="col-md-12">
+          <ol class="breadcrumb">
+            <li><a href="#">Home</a></li>
+            <li class="active"><a href="#">Статистика</a></li>
+          </ol>
+
+          <div class="row">
+            <div class="col-md-4"><button class="btn btn-lg btn-primary btn-block" type="button" id = "agreeVacancy">
+              Согласовать вакансию
+             </button></div>
+            <div class="col-md-4"><button class="btn btn-lg btn-primary btn-block"  data-toggle="modal" data-target="#formQuestion" type="button" >
+              Задать вопрос
+             </button></div>
+             <div class="col-md-4"><button class="btn btn-lg btn-primary btn-block"  data-toggle="modal" data-target="#review" type="button" type="button"> 
+              Оставить отзыв
+             </button></div>
+			 <div class="col-md-4"><button class="btn btn-lg btn-primary btn-block"  data-toggle="modal" data-target="#formRequestVacancy" type="button" >
+             Отправить сообщения пользователям
+             </button></div>
+			 <div class="col-md-4"><button class="btn btn-lg btn-primary btn-block"  data-toggle="modal" data-target="#formStastisticsAboutVacancy" type="button" >
+              Посмотреть статистику
+             </button></div>
+          </div>
+          <h3>Описание вакансии</h3>
+          
+            <table class="table table-bordered  table-condensed" >
+              <tr>
+                <td>Описание</td>
+                <td>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit quisquam voluptatum sapiente neque 
+                    ratione facere unde ducimus nam quae fugiat, id ut quidem. In consequuntur nulla sunt perspiciatis. Maiores, necessitatibus?</p>
+                </td>
+              </tr>
+              <tr>
+                <td>работодатель</td>
+                <td>Иванов А.С</td>
+              </tr>
+              <tr>
+                <td>дата размещения</td>
+                <td>01.01.2021</td>
+              </tr>
+              <tr>
+                <td>фото и видео материалы</td>
+                <td>
+
+                  <div class="row">
+                   
+                    <div class="card">
+                      <img src="https://ippk-vologda.ru/sites/default/files/styles/news_full_image/public/news/2018/est_rabota.jpg?itok=EJIsqP1b" alt="vac1" width = "10%" height = "10%">
+                    </div>
+                  </div>
+                </td>
+              </tr>
+            </table>
+          
+              
+             
+
+          
+      </div>
+    </div>
+    </div>
+
+  <div class="modal fade" id="formQuestion" tabindex="-1" role="dialog"  aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+          <h4 class="modal-title" >Задать вопрос работадателю</h4>
+        </div>
+        <div class="modal-body">
+          <div class="row form">
+            <div class="col-md-12">
+              <div class="alert alert-success" role="alert">
+                <strong>Well done!</strong> You successfully read this important
+                alert message.
+              </div>
+              <form class="form-question">
+                <div class="form-group">
+                  <label for="rab" class="sr-only">Работадатель:</label>
+                  <select id="selectRab" class="form-control" required>
+                    <option value="1">Иванов А.С</option>
+                    <option value="2">Петров М.Т</option>
+                  </select>
+                </div>
+
+                <div class="form-group">
+                  <textarea class="form-control" id="question" rows="3" required></textarea>
+                </div>
+                
+                <button type="button" class="btn btn-primary">Оправить</button>
+              </form>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+  <div class="modal fade" id="review" tabindex="-1" role="dialog"  aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+          <h4 class="modal-title" > Отзыв</h4>
+        </div>
+        <div class="modal-body">
+          <div class="row form">
+            <div class="col-md-12">
+              <div class="alert alert-success" role="alert">
+                <strong>Well done!</strong> You successfully read this important
+                alert message.
+              </div>
+              <form class="form-signin">
+
+                <div class="form-group">
+                  <textarea class="form-control" id="review" rows="3"></textarea>
+                </div>
+                
+                <button type="button" class="btn btn-primary">Оправить</button>
+              </form>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="formRequestVacancy" tabindex="-1" role="dialog"  aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+          <h4 class="modal-title" >Список соискателей</h4>
+        </div>
+        <div class="modal-body">
+          <div class="row form">
+            <div class="col-md-12">
+              <div class="alert alert-success" role="alert">
+                <strong>Well done!</strong> You successfully read this important
+                alert message.
+              </div>
+              <form class="form-question">
+                <div class="form-group">
+                  <label for="rab" class="sr-only">Соискатели:</label>
+                  <select id="selectRab" class="form-control" required>
+                    <option value="1">Иванов А.С</option>
+                    <option value="2">Петров М.Т</option>
+                  </select>
+                </div>
+
+                <div class="form-group">
+                  <textarea class="form-control" id="question" rows="3" required></textarea>
+                </div>
+                
+                <button type="button" class="btn btn-primary">Отправить</button>
+              </form>
+			  
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  
+  <div class="modal fade" id="formStastisticsAboutVacancy" tabindex="-1" role="dialog"  aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+          <h4 class="modal-title" >Статистика по вакансии "---"</h4>
+        </div>
+        <div class="modal-body">
+          <div class="row form">
+            <div class="col-md-12">
+				<table class="table table-bordered  table-condensed" >
+              <tr>
+                <td>количество соискателей</td>
+                <td>
+					5
+                </td>
+              </tr>
+              <tr>
+                <td>список соискателей</td>
+                <td>
+				Иванов А.С<br>
+				Петров А.С</br>
+				</td>
+              </tr>
+              <tr>
+                <td>количество вопросов спикеру</td>
+                <td>5</td>
+              </tr>
+			  <tr>
+                <td>оценка работодателя</td>
+                <td>5</td>
+              </tr>
+			  <tr>
+                <td>список отзывов о вакансии</td>
+                <td>
+				
+					<div class = "review">
+						<span>Иванов А.С</span>
+						<span>12.10.2021</span>
+						<p>lorem empsum</p>
+					</div>
+					<div class = "review">
+						<span>Иванов А.С</span>
+						<span>12.10.2021</span>
+						<p>lorem empsum</p>
+					</div>
+					<div class = "review">
+						<span>Иванов А.С</span>
+						<span>12.10.2021</span>
+						<p>lorem empsum</p>
+					</div>
+				</td>
+              </tr>
+              
+            </table>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  
+    <script
+    src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+    crossorigin="anonymous"></script>
+    <script>
+
+      $(function(){
+        $("#selectVacancy").on("click",function(){
+          confirm("Вы действительно хотите выбрать вакансию?");
+          // alert("Вы успешно выбрали вакансию!");
+        });
+		$("#agreeVacancy").on("click",function(){
+			alert("Вакансия \"Грузчик\" согласована");
+		});
+		
+		
+      });
+    </script>
+
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  </body>
+</html>

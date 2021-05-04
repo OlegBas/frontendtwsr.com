@@ -37,7 +37,7 @@
               <a href="reg.html">Регистрация</a>
             </li>
             <li><a href="login.html">Авторизация</a></li>
-            <li><a href="logout.html">Выход</a></li>
+            <li><a href="login.html">Выход</a></li>
           </ul>
         </div>
       </div>
@@ -59,7 +59,7 @@
           <div class="tab-content">
             <div class="tab-pane active" id="ldata">
 
-              
+             
                 
                   <div class="alert alert-success" role="alert">
                     <strong>Успех!</strong> Данные пользователя успешно изменены.
@@ -68,54 +68,59 @@
                     <h2 class="form-signin-headin text-center">Личные данные</h2>
         
                     <div class="form-group">
-                      <label for="inputFio" class="sr-only">ФИО</label>
+                      <label for="inputFio"  >ФИО</label>
                       <input
                         type="text"
                         id="inputFio"
                         class="form-control"
                         placeholder="ФИО"
+						value = "Бас Олег Геннадьевич"
                         required
                         autofocus
                       />
                     </div>
                     <div class="form-group">
-                      <label for="inputLogin" class="sr-only">Логин</label>
+                      <label for="inputLogin" >Логин</label>
                       <input
                         type="text"
                         id="inputLogin"
                         class="form-control"
                         placeholder="Логин"
+						value = "OlegBas96"
                         required
                         autofocus
                       />
                     </div>
                     <div class="form-group">
-                      <label for="inputPhone" class="sr-only">Номер телефона</label>
+                      <label for="inputPhone" >Номер телефона</label>
                       <input
                         type="tel"
                         id="inputPhone"
                         class="form-control"
                         placeholder="Номер телефона:"
+						value = "+79281445896"
                         required
                       />
                     </div>
                     <div class="form-group">
-                      <label for="inputEmail" class="sr-only">E-mail:</label>
+                      <label for="inputEmail" >E-mail:</label>
                       <input
                         type="email"
                         id="inputEmail"
                         class="form-control"
                         placeholder="E-mail:"
+						value = "olegbas199@gmail.com"
                         required
                       />
                     </div>
                     <div class="form-group">
-                      <label for="password" class="sr-only">Пароль:</label>
+                      <label for="password" >Пароль:</label>
                       <input
                         type="password"
                         id="password"
                         class="form-control"
                         placeholder="Пароль:"
+						value = "123456"
                         required
                       />
                     </div>
@@ -126,14 +131,22 @@
                         id="repeatPassword"
                         class="form-control"
                         placeholder="Повтор пароля:"
+						
                         required
                       />
+                    </div>
+                    <div class="form-group">
+                      <label for="status" class="sr-only">Статус</label>
+                      <select id="status" class="form-control" disabled >
+                        <option value="1">Cоискатель</option>
+                        <option value="2">Работодатель</option>
+                      </select>
                     </div>
         
                     
         
                     <button class="btn btn-lg btn-primary btn-block" type="submit">
-                      Обновить данные
+                      Сохранить
                     </button>
                   </form>
                 </div>
@@ -148,9 +161,10 @@
                     <div class="form-group">
                       <label for="filter_vacancy" class="sr-only">Фильтрация</label>
                       <select id="filter_vacancy" class="form-control">
-                        <option value="1">Аутальные вакансии</option>
-                        <option value="2">Просмотренные вакансии</option>
-                        <option value="3">Выбранные вакансии</option>
+                        <option value="1">Акутальные вакансии</option>
+                        <option value="2">Неакуальные вакансии</option>
+                        <option value="3">Просмотренные вакансии</option>
+                        <option value="4">Выбранные вакансии</option>
                       </select>
                     </div>
                   </th>
@@ -158,32 +172,53 @@
                 <tr class="active">
                   <th>Наименование</th>
                   <th>Описание</th>
+                  <th>Дата регистрации</th>
                   <th>
                     
                   </th>
                 </tr>
                 <tr>
-                  <td class="active">Грузчик</td>
+                  <td class="active"><a href="aboutVacancyEmpl.html">Грузчик</a> </td>
                   <td class="success">
                     Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi
                     alias sequi nemo illo cumque adipisci. Voluptatum accusamus,
                     vero nisi possimus provident earum, laudantium inventore
                     voluptate reprehenderit explicabo omnis ex perspiciatis!
                   </td>
-                  <td><a href="#">Отказать от вакансии</a>
+                  <td>01/01/2021</td>
+                  <td><a title = "Отказать от вакансии" href="#" class = "dismissVacancy"> 
+				  <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-patch-minus" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+  <path fill-rule="evenodd" d="M5.5 8a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1H6a.5.5 0 0 1-.5-.5z"/>
+  <path fill-rule="evenodd" d="M10.273 2.513l-.921-.944.715-.698.622.637.89-.011a2.89 2.89 0 0 1 2.924 2.924l-.01.89.636.622a2.89 2.89 0 0 1 0 4.134l-.637.622.011.89a2.89 2.89 0 0 1-2.924 2.924l-.89-.01-.622.636a2.89 2.89 0 0 1-4.134 0l-.622-.637-.89.011a2.89 2.89 0 0 1-2.924-2.924l.01-.89-.636-.622a2.89 2.89 0 0 1 0-4.134l.637-.622-.011-.89a2.89 2.89 0 0 1 2.924-2.924l.89.01.622-.636a2.89 2.89 0 0 1 4.134 0l-.715.698a1.89 1.89 0 0 0-2.704 0l-.92.944-1.32-.016a1.89 1.89 0 0 0-1.911 1.912l.016 1.318-.944.921a1.89 1.89 0 0 0 0 2.704l.944.92-.016 1.32a1.89 1.89 0 0 0 1.912 1.911l1.318-.016.921.944a1.89 1.89 0 0 0 2.704 0l.92-.944 1.32.016a1.89 1.89 0 0 0 1.911-1.912l-.016-1.318.944-.921a1.89 1.89 0 0 0 0-2.704l-.944-.92.016-1.32a1.89 1.89 0 0 0-1.912-1.911l-1.318.016z"/>
+</svg>
+				  </a>
                 </tr>
                 <tr>
-                  <td class="active">Грузчик</td>
+                  <td class="active"><a href="aboutVacancyEmpl.html">Грузчик</a> </td>
                   <td class="success">
                     Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi
                     alias sequi nemo illo cumque adipisci. Voluptatum accusamus,
                     vero nisi possimus provident earum, laudantium inventore
                     voluptate reprehenderit explicabo omnis ex perspiciatis!
                   </td>
-                  <td><a href="#">Отказать от вакансии</a></td>
+                  <td>01/01/2020</td>
+                  <td><a title = "Отказать от вакансии" href="#" class = "dismissVacancy"> 
+				  <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-patch-minus" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+  <path fill-rule="evenodd" d="M5.5 8a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1H6a.5.5 0 0 1-.5-.5z"/>
+  <path fill-rule="evenodd" d="M10.273 2.513l-.921-.944.715-.698.622.637.89-.011a2.89 2.89 0 0 1 2.924 2.924l-.01.89.636.622a2.89 2.89 0 0 1 0 4.134l-.637.622.011.89a2.89 2.89 0 0 1-2.924 2.924l-.89-.01-.622.636a2.89 2.89 0 0 1-4.134 0l-.622-.637-.89.011a2.89 2.89 0 0 1-2.924-2.924l.01-.89-.636-.622a2.89 2.89 0 0 1 0-4.134l.637-.622-.011-.89a2.89 2.89 0 0 1 2.924-2.924l.89.01.622-.636a2.89 2.89 0 0 1 4.134 0l-.715.698a1.89 1.89 0 0 0-2.704 0l-.92.944-1.32-.016a1.89 1.89 0 0 0-1.911 1.912l.016 1.318-.944.921a1.89 1.89 0 0 0 0 2.704l.944.92-.016 1.32a1.89 1.89 0 0 0 1.912 1.911l1.318-.016.921.944a1.89 1.89 0 0 0 2.704 0l.92-.944 1.32.016a1.89 1.89 0 0 0 1.911-1.912l-.016-1.318.944-.921a1.89 1.89 0 0 0 0-2.704l-.944-.92.016-1.32a1.89 1.89 0 0 0-1.912-1.911l-1.318.016z"/>
+</svg></td>
                 </tr>
     
               </table>
+			  <ul class="pagination">
+            <li><a href="#">&laquo;</a></li>
+            <li><a href="#">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">4</a></li>
+            <li><a href="#">5</a></li>
+            <li><a href="#">&raquo;</a></li>
+          </ul>
             </div>
           </div>
 
@@ -208,10 +243,20 @@
         </div>
       </div>
     </div>
+
+    
     <script
     src="https://code.jquery.com/jquery-3.6.0.min.js"
     integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
     crossorigin="anonymous"></script>
+    <script>
+
+      $(function(){
+        $(".dismissVacancy").on("click",function(){
+            res = confirm("Вы действительно хотите отказаться от вакансии?");
+        });
+      });
+    </script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
   </body>
 </html>
